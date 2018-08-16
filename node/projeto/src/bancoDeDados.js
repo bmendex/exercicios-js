@@ -21,5 +21,11 @@ function getProdutos() {
     return Object.values(produtos)
 }
 
+function excluirProdutos() {
+    const produto = produtos[id]
+    delete produtos[id]
+    return 
+}
+
 // Tornar funções visíveis para fora do arquivo
-module.exports = { salvarProduto, getProduto, getProdutos }
+module.exports = { salvarProduto, getProduto, getProdutos, excluirProdutos }
